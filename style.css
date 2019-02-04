@@ -1,15 +1,122 @@
-.container-fluid {
-    background-color: #6c2eb9;
-    height: 5rem;
+/****Hero Image and nav******/
+.bg-dark {
+    background: transparent !important;
 }
 
-.row {
-    background-color: #ff9232;
-    height: 4.7rem;
+.bg-dark.scrolled {
+    background: #636c4b !important;
 }
 
-[class*="col-"] {
-    background-color: #00c3aa;
-    height: 4.2rem;
-    border: 2px solid rgba(0,0,0,0.3);
+
+html,
+body,
+header,
+.intro {
+    height: 100%;
 }
+
+/**overlay with background image*/
+div.intro {
+    background:
+        /*linear gradient first*/
+        linear-gradient(rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+        /*bottom image*/
+        url(assets/blondewoods.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*****Custom Styles*******/
+div.about-me-bg {
+    background: #636c4b;
+}
+
+.white-text {
+    color: #fff;
+}
+
+hr.hr-light{
+    border-color: #fff;
+    width: 15%;
+}
+
+.hr-light {
+    border-color: #fff;
+    width: 75%;
+}
+
+.hr-dark {
+    border-color: #000;
+    width: 15%;
+}
+
+p.heading1 {
+    text-align: left;
+    font-size: 1.9rem;
+    font-weight: 100;
+    display: block;
+    padding-top: 60px;
+}
+
+p.heading2 {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 100;
+    display: block;
+}
+
+img.img-rounded {
+   border-radius: 75%;
+    height: auto;
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+/*Card section*/
+div.card {
+    border: none;
+}
+
+div p.card-text {
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+div.card-align {
+    display: block;
+    margin: auto;
+}
+
+h5.card-heading {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 100;
+    margin: none;
+}
+
+h5.card-subheading {
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+/*Media query for custom styles*/
+
+
+@media screen and (min-width: 769px) {
+    p.heading1 {
+        text-align: center;
+    }
+    
+    p.heading2 {
+        text-align: center;
+    }
+}
+
+/*bouncing arrow*/
+
