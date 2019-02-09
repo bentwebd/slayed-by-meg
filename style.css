@@ -29,18 +29,30 @@ div.intro {
     background-size: cover;
 }
 
+div.booking-bg {
+    background:
+        /*linear gradient first*/
+        linear-gradient(rgba(99, 108, 75, 0.9),
+        rgba(99, 108, 75, 0.9)),
+        /*bottom image*/
+        url(assets/geometric2.jpg)no-repeat center center fixed;
+    -webkit-background-size: fill;
+    -moz-background-size: fill;
+    -o-background-size: fill;
+    background-size: fill;
+}
+
 /*****Custom Styles*******/
 div.about-me-bg {
-    background: #636c4b;
+    background: #e9e7da;
+}
+
+div.portfolio-bg {
+    background-image: linear-gradient(to bottom right, #636b46, #373f27);
 }
 
 .white-text {
     color: #fff;
-}
-
-hr.hr-light{
-    border-color: #fff;
-    width: 15%;
 }
 
 .hr-light {
@@ -50,7 +62,7 @@ hr.hr-light{
 
 .hr-dark {
     border-color: #000;
-    width: 15%;
+    width: 5rem;
 }
 
 p.heading1 {
@@ -59,6 +71,11 @@ p.heading1 {
     font-weight: 100;
     display: block;
     padding-top: 60px;
+}
+
+h2.display-4 {
+    display: block;
+    text-align: center;
 }
 
 p.heading2 {
@@ -79,6 +96,8 @@ img.img-rounded {
 /*Card section*/
 div.card {
     border: none;
+    background: #e9e7da;
+
 }
 
 div p.card-text {
@@ -105,6 +124,18 @@ h5.card-subheading {
     text-align: center;
 }
 
+
+h4.center-header {
+  text-align: center;
+    font-size: 1.9rem;
+    font-weight: 100;
+    display: block;  
+}
+
+form.meg-contact {
+    padding: 10px;
+}
+
 /*Media query for custom styles*/
 
 
@@ -116,7 +147,26 @@ h5.card-subheading {
     p.heading2 {
         text-align: center;
     }
+    
+    form.meg-contact {
+        width: 75%;
+        margin: auto;
+    }
+    
 }
 
-/*bouncing arrow*/
 
+/*instafeed*/
+
+div.instaimg {
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    
+}
+
+div.instaimg img:hover {
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    -webkit-opacity: 0.8;
+}

@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/magnific.css">
     <title>slayedbymeg.com</title>
 </head>
 
@@ -30,7 +32,7 @@
                     <!--nav bar items in <ul> must be wrapped in navbar-nav class-->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a href="#about-me" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Booking</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                     </ul>
@@ -72,7 +74,7 @@
     <!--/mask-->
     <!--Content-->
     <main>
-        <div class="container-fluid <!--about-me-bg--> <!--white-text-->">
+        <div class="container-fluid about-me-bg">
             <!--About me-->
             <section class id="about-me">
                 <p class="heading1">Slayed by Meg is a really cool stylist from Queens, Ny. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
@@ -85,7 +87,7 @@
                     <div class="col-lg"></div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-sm-4 mb-4">
+                    <div class="col-md-4 mb-4">
                         <div class="card card-align" style="width: 18rem;">
                             <img src="assets/hotheads3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -95,7 +97,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4 mb-4">
+                    <div class="col-md-4 mb-4">
                         <div class="card card-align" style="width: 18rem;">
                             <img src="assets/megan.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -105,7 +107,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4 mb-4">
+                    <div class="col-md-4 mb-4">
                         <div class="card card-align" style="width: 18rem;">
                             <img src="assets/redken.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -119,23 +121,85 @@
             </section>
         </div>
         </div>
-
         <!--/About me-->
+
+
         <!--Portfolio-->
         <section id="portfolio">
+            <div class="container-fluid portfolio-bg pb-3 pt-lg-5 pb-lg-5 desktop-padding">
+                <h2 class="display-4 white-text pt-2">Let's Get Social...</h2>
+                <p class="card-text white-text">Megan loves instagram and is very active, so she would be honered if you'd check out the feed below and follow along!</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+                            <a class="btn btn-outline-light text-center" href="https://www.instagram.com/slayedby_meg/?hl=en" target="_blank">Go to Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid pt-3 pt-md-3 pb-5 about-me-bg">
+                <h4 class="center-header pt-3 pb-3">Feel free to check out Meg's latest looks</h4>
+                <div class="row gallery">
+                    <div id="instafeed"></div>
+                </div>
+            </div>
 
         </section>
 
-        <!--portfolio-->
+        <!--/portfolio-->
+
+
         <!--booking-->
         <section id="booking">
-
+            <div class="container-fluid pt-5 booking-bg pb-5">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <p class="card-text white-text pb-3">Meg is excited to announce that she is accepting new clients. Book your color, cut, or balayage here. New clients receive 10% off!</p>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <a class="btn btn-outline-light text-center" href="https://www.instagram.com/slayedby_meg/?hl=en" target="_blank">Book Now</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--booking-->
         <!--contact-->
         <section id="contact">
-
+            <div class="container-fluid">
+                <div class="text-center">
+                    <h4 class="display-4">Contact</h4>
+                    <hr class="hr-dark">
+                </div>
+                <div class="row">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <form class="meg-contact" action="">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" name="name" id="name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="text" name="email" id="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" name="subject" id="subject" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-dark">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--contact-->
@@ -155,11 +219,26 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/instafeed.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/magnific.min.js"></script>
+
     <script>
         $(window).scroll(function() {
             $('nav').toggleClass('scrolled', $(this).scrollTop() > 700);
         })
+
     </script>
 </body>
 
 </html>
+
+
+
+
+
+
+<!--4035704202
+
+
+4035704202.58426e9.0a7f585ff6314cc4b60fb41c040b1bce-->
